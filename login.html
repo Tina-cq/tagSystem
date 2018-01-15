@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/login.css"/>
+    <script src="js/jQuery.1.8.2.min.js"></script>
+</head>
+<body>
+<div class="login_top"></div>
+
+<div class="login_label">
+    <div class="login_bg"></div>
+    <h6>贝格资讯智能标签管理系统</h6>
+    <ul id="login_label">
+        <li><input type="text" placeholder="账号"/></li>
+        <li><input type="text" placeholder="密码"/></li>
+        <div class="remindme"><input type="checkbox"/><span>记住我</span></div>
+        <li class="login_btn"><span>登录</span></li>
+    </ul>
+</div>
+
+<div class="footer">上海贝格计算机数据服务有限公司. Copyright © 2017  All Rights Reserved</div>
+</body>
+</html>
+<script>
+    $(function(){
+        $("#login_label input").focus(function(){
+            $(this).parents("li").css("border-color","#2b79c3");
+        }).blur(function(){
+            $(this).parents("li").css("border-color","#c9c9c9");
+
+        })
+    })
+</script>

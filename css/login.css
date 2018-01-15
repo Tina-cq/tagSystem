@@ -1,0 +1,89 @@
+.login_top{
+    height: 36px;
+    background: url("../images/login_01.jpg") no-repeat;
+    background-size: cover;
+}
+
+.login_label{
+    width: 348px;
+    /*height: 280px;*/
+    border: 1px solid #dfdfdf;
+
+    background: #fff;
+    padding: 19px 0 39px;
+    /*margin: 146px auto 0;*/
+    /*position: relative;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: -36px;
+}
+.login_label h6{
+    font-size: 18px;
+    color: #535863;
+    line-height: 60px;
+    margin:0 10px;
+    border-bottom: 1px solid #dfdfdf;
+    text-align: center;
+    font-weight: bold;
+
+}
+.login_label ul{
+    padding-top: 6px;
+    width: 200px;
+    margin:0  auto;
+}
+.login_label li{
+    margin-top: 10px;
+    /*width: 200px;*/
+    height: 31px;
+    line-height: 31px;
+    border: 1px solid #c9c9c9;
+    font-size: 12px;
+}
+.login_label li input{
+    border: none;
+    outline: none;
+    padding-left: 12px;
+    color: #484848;
+}
+.login_bg{
+    width: 251px;
+    height: 65px;
+    position: absolute;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../images/loginbg.png") no-repeat;
+    background-size: cover;
+}
+
+.remindme{
+    padding-top: 13px;
+    line-height: 1px;
+}
+.remindme span{
+    color: #484848;
+    padding-left: 4px;
+    font-size: 12px;
+}
+.login_label .login_btn{
+    background: #2b79c3;
+    color: #fff;
+    text-align: center;
+    border-color: #2b79c3;
+    cursor: pointer;
+}
+
+.footer{
+    line-height: 24px;
+    color: #a8a8a8;
+    font-size: 12px;
+    position: absolute;
+    bottom: 25px;
+    border-top: 1px solid #f1f1f1;
+    width: 100%;
+    text-align: center;
+
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/management.css"/>
+    <script src="js/jQuery.1.8.2.min.js"></script>
+    <script src="js/nw-scroll.min.js"></script>
+</head>
+<body>
+<!--模态层-->
+<div class="model"></div>
+<div class="article_table">
+    <div class="close">×</div>
+    <div class="article_table_til clearfix">
+        <span>文章查找：</span>
+        <div class="search_btn">
+            <input type="text"/>
+            <div><span>搜索</span></div>
+        </div>
+    </div>
+
+    <div class="article_search_result">
+        <div class="thead clearfix" id="thead">
+            <div style="position: absolute;top: 0;z-index: 100;">
+                <span style="width:  50px;"></span>
+                <span>文章编号</span>
+                <span>引用文章名称</span>
+                <span>登记日期</span>
+            </div>
+        </div>
+
+        <div class="table">
+            <table id="cn2">
+                <tbody>
+                <tr id="table">
+                    <td style="width: 50px;"><input class="radio" type="radio" name="article"/></td>
+                    <td>00014458</td>
+                    <td>《引用文章名称》</td>
+                    <td><span>2016-05-18 15：:0:03</span></td>
+                </tr>
+                <tr>
+                    <td><input class="radio" type="radio" name="article"/></td>
+                    <td>00014458</td>
+                    <td>《引用文章名称》</td>
+                    <td><span>2016-05-18 15：:0:03</span></td>
+                </tr>
+                <tr class="radio_active">
+                    <td><input class="radio" type="radio" name="article" checked/></td>
+                    <td>00014458</td>
+                    <td>《引用文章名称》</td>
+                    <td><span>2016-05-18 15：:0:03</span></td>
+                </tr>
+                <tr>
+                    <td><input class="radio" type="radio" name="article"/></td>
+                    <td>00014458</td>
+                    <td>《引用文章名称》</td>
+                    <td><span>2016-05-18 15：:0:03</span></td>
+                </tr>
+                <tr>
+                    <td><input class="radio" type="radio" name="article"/></td>
+                    <td>00014458</td>
+                    <td>《引用文章名称》</td>
+                    <td><span>2016-05-18 15：:0:03</span></td>
+                </tr>
+                <tr>
+                    <td><input class="radio" type="radio" name="article"/></td>
+                    <td>00014458</td>
+                    <td>《引用文章名称》</td>
+                    <td><span>2016-05-18 15：:0:03</span></td>
+                </tr>
+                <tr>
+                    <td><input class="radio" type="radio" name="article"/></td>
+                    <td>00014458</td>
+                    <td>《引用文章名称》</td>
+                    <td><span>2016-05-18 15：:0:03</span></td>
+                </tr>
+                <tr>
+                    <td><input class="radio" type="radio" name="article"/></td>
+                    <td>00014458</td>
+                    <td>《引用文章名称》</td>
+                    <td><span>2016-05-18 15：:0:03</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="article_search_btn">
+        <span>保存</span>
+        <span>取消</span>
+    </div>
+</div>
+<!--模态层结束-->
+    <div class="left" id="left">
+        <div class="logo"><img src="images/logo.png" alt=""/></div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a  class="left_active" href="management.html">标签管理</a>
+                    <ul>
+                        <li><a href="#">未审核标签</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="labelAssociated.html">标签关联查询</a>
+                </li>
+                <li>
+                    <a href="sensitiveLabel.html">敏感标签管理</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="right" id="right">
+        <div class="header">
+            <div class="header_left">贝格资讯智能标签管理系统</div>
+            <div class="header_right">
+                <div class="img"><img src="images/img.jpg" alt=""/></div>
+                <div class="name">
+                    <p>justbing@123.com</p>
+                    <p>2015-05-09　09:35</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="management addTags">
+            <div class="addTags_til">
+                <span>添加标签</span>
+            </div>
+
+            <div class="tags_cont">
+                <ul>
+                    <li>
+                        <span>流水号：</span>
+                        <div><input type="text" placeholder="1000001"/></div>
+                    </li>
+                    <li>
+                        <span>标签名称：</span>
+                        <div><input type="text" placeholder="信息披露"/></div>
+                    </li>
+                    <li>
+                        <span>登记日期：</span>
+                        <div class="disabled"><input type="text" value="2017-08-28 15:02:03" disabled="disabled"/></div>
+                    </li>
+                    <li>
+                        <span>登记用户ID：</span>
+                        <div class="disabled"><input type="text" value="000001" disabled="disabled"/></div>
+                    </li>
+                    <li>
+                        <span>引用文章：</span>
+                        <div class="art" id="art"><input type="text" placeholder="100101-《山海经》"/></div>
+                    </li>
+                    <li>
+                        <span></span>
+                        <div class="tags_btn"><a href="javascript:;">确定</a><a href="javascript:;">取消</a></div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer02">上海贝格计算机数据服务有限公司. Copyright © 2017  All Rights Reserved</div>
+    </div>
+</body>
+</html>
+
+
+<script>
+
+    function sss(id){
+        return document.getElementById(id)
+    }
+
+    function spanWidth(){
+        $("#thead span").each(function(){
+            var i=$(this).index();
+            $(this).width($("#table td").eq(i).width()+1)
+        });
+        $("#thead span:last").width($("#table td:last").find("span").width());
+    }
+
+
+$(function(){
+    //********************************************************左侧高度
+    var screenH=document.documentElement.clientHeight;
+    $(".left").css("min-height",screenH);
+
+    function getHeight() {
+        if (sss("left").offsetHeight>=sss("right").offsetHeight){
+            sss("right").style.height=sss("left").offsetHeight + "px";
+        }
+        else{
+            sss("left").style.height=sss("right").offsetHeight + "px";
+        }
+    }
+    window.onload = function() {
+        getHeight();
+    };
+
+    //*************************************************************点击引用文章
+
+    $("#art").click(function(){
+        $(".model").show();
+        $(".article_table").show();
+        spanWidth();
+        scrolls.refresh();
+    });
+
+    //*************************************************************点击关闭按钮
+    $(".close").click(function(){
+        $(".model").hide();
+        $(".article_table").hide();
+
+    });
+
+   //****************************************弹框表格
+    var scrolls = nw.scroll(sss("cn2"), {
+        yShow: true,
+        xShow: false,
+        autoHide: false
+    });
+
+        window.onload=window.onresize=function(){
+            spanWidth();
+        };
+
+    //****************************************点击radio
+    $(".radio").click(function(){
+        $('#cn2 tr').removeClass("radio_active");
+        $(".radio").each(function(){
+            if($(this).is(":checked")){
+                $(this).parents("tr").addClass("radio_active");
+            }
+        })
+
+    })
+
+
+
+});
+
+</script>

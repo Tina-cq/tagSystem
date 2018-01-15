@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/management.css"/>
+    <script src="js/jQuery.1.8.2.min.js"></script>
+    <script src="js/nw-scroll.min.js"></script>
+</head>
+<body>
+<!--模态层-->
+<div class="model"></div>
+<div class="article_table bounced_label_name">
+    <div class="close">×</div>
+
+    <div class="labelName clearfix">
+        <span>标签名称：</span>
+        <div><input id="labelName" type="text" placeholder="人工标签"/></div>
+    </div>
+
+    <div class="promptName">
+        <div id="cn3">
+            <table>
+                <tbody>
+                <tr>
+                    <td>00014458</td>
+                    <td>人工智能</td>
+                </tr>
+                <tr>
+                    <td>00014458</td>
+                    <td>人工智能</td>
+                </tr>
+                <tr>
+                    <td>00014458</td>
+                    <td>人工智能</td>
+                </tr>
+                <tr>
+                    <td>00014458</td>
+                    <td>人工智能</td>
+                </tr>
+                <tr>
+                    <td>00014458</td>
+                    <td>人工智能</td>
+                </tr>
+                <tr>
+                    <td>00014458</td>
+                    <td>人工智能</td>
+                </tr>
+                <tr>
+                    <td>00014458</td>
+                    <td>人工智能</td>
+                </tr>
+                <tr>
+                    <td>00014458</td>
+                    <td>人工智能</td>
+                </tr>
+                <tr>
+                    <td>00014458</td>
+                    <td>人工智能</td>
+                </tr>
+                <tr>
+                    <td>00014458</td>
+                    <td>人工智能</td>
+                </tr>
+                <tr>
+                    <td>00014458</td>
+                    <td>人工智能</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="article_search_btn">
+        <span>保存</span>
+        <span>取消</span>
+    </div>
+</div>
+<!--模态层结束-->
+    <div class="left">
+        <div class="logo"><img src="images/logo.png" alt=""/></div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="management.html">标签管理</a>
+                    <ul>
+                        <li><a href="#">未审核标签</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="labelAssociated.html">标签关联查询</a>
+                </li>
+                <li>
+                    <a href="#"  class="left_active">敏感标签管理</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+        <div class="header">
+            <div class="header_left">贝格资讯智能标签管理系统</div>
+            <div class="header_right">
+                <div class="img"><img src="images/img.jpg" alt=""/></div>
+                <div class="name">
+                    <p>justbing@123.com</p>
+                    <p>2015-05-09　09:35</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="total_label">当前标签总量：2341 <span>敏感标签总量：361</span></div>
+        <div class="management">
+            <div class="management_top clearfix">
+                <div class="management_l">
+                    <i>标签查询：</i>
+                    <div class="search">
+                        <input type="text"/><span><a>搜索</a></span>
+                    </div>
+                </div>
+                <div class="management_r">
+                    <span id="addlabel">添加</span>
+                    <span>删除</span>
+                    <span style="display: none;"><a>添加</a></span>
+                </div>
+            </div>
+
+            <div class="management_table">
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th style="min-width: 40px;"><input type="checkbox"/></th>
+                        <th style="min-width: 40px;">序号</th>
+                        <th style="min-width: 75px;">流水号</th>
+                        <th style="min-width: 77px;">标签名称</th>
+                        <th style="min-width:155px;">登记日期</th>
+                        <th style="min-width: 77px;">状态</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>1</td>
+                        <td>1000001</td>
+                        <td>人工智能</td>
+                        <td>2016-05-18 15:02:03</td>
+                        <td class="red">敏感</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>1</td>
+                        <td>1000001</td>
+                        <td>人工智能</td>
+                        <td>2016-05-18 15:02:03</td>
+                        <td class="red">敏感</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>1</td>
+                        <td>1000001</td>
+                        <td>人工智能</td>
+                        <td>2016-05-18 15:02:03</td>
+                        <td class="red">敏感</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>1</td>
+                        <td>1000001</td>
+                        <td>人工智能</td>
+                        <td>2016-05-18 15:02:03</td>
+                        <td class="red">敏感</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>1</td>
+                        <td>1000001</td>
+                        <td>人工智能</td>
+                        <td>2016-05-18 15:02:03</td>
+                        <td class="red">敏感</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>1</td>
+                        <td>1000001</td>
+                        <td>人工智能</td>
+                        <td>2016-05-18 15:02:03</td>
+                        <td class="red">敏感</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>1</td>
+                        <td>1000001</td>
+                        <td>人工智能</td>
+                        <td>2016-05-18 15:02:03</td>
+                        <td class="red">敏感</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>1</td>
+                        <td>1000001</td>
+                        <td>人工智能</td>
+                        <td>2016-05-18 15:02:03</td>
+                        <td class="red">敏感</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>1</td>
+                        <td>1000001</td>
+                        <td>人工智能</td>
+                        <td>2016-05-18 15:02:03</td>
+                        <td class="red">敏感</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>1</td>
+                        <td>1000001</td>
+                        <td>人工智能</td>
+                        <td>2016-05-18 15:02:03</td>
+                        <td class="red">敏感</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>1</td>
+                        <td>1000001</td>
+                        <td>人工智能</td>
+                        <td>2016-05-18 15:02:03</td>
+                        <td class="red">敏感</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>1</td>
+                        <td>1000001</td>
+                        <td>人工智能</td>
+                        <td>2016-05-18 15:02:03</td>
+                        <td class="red">敏感</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>1</td>
+                        <td>1000001</td>
+                        <td>人工智能</td>
+                        <td>2016-05-18 15:02:03</td>
+                        <td class="red">敏感</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>1</td>
+                        <td>1000001</td>
+                        <td>人工智能</td>
+                        <td>2016-05-18 15:02:03</td>
+                        <td class="red">敏感</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>1</td>
+                        <td>1000001</td>
+                        <td>人工智能</td>
+                        <td>2016-05-18 15:02:03</td>
+                        <td class="red">敏感</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="pages" id="pages">
+                <ul class="clearfix">
+                    <li class="tohomePage">首页</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li class="pages_active">5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li class="ellipsis">...</li>
+                    <li>12</li>
+                    <li class="tolastPage">尾页</li>
+                </ul>
+            </div>
+
+            <div class="total_record">共34条记录</div>
+        </div>
+
+        <div class="footer02">上海贝格计算机数据服务有限公司. Copyright © 2017  All Rights Reserved</div>
+    </div>
+</body>
+</html>
+
+
+<script>
+
+
+$(function(){
+
+    function sss(id){
+        return document.getElementById(id)
+    }
+    //********************************************************左侧高度
+    var screenH=document.documentElement.clientHeight;
+    $(".left").height($(".right").height());
+    $(".left").css("min-height",screenH);
+
+    //********************************************************分页按钮点击
+    $("#pages li").click(function(){
+        if(!$(this).hasClass("ellipsis")){
+            $(this).addClass("pages_active").siblings().removeClass("pages_active");
+        }
+    });
+    //********************************************************弹框，输入标签名称出提示
+
+    $("#labelName").focus(function(){
+        $(this).parent("div").css("border-color","#2979c2");
+    });
+
+    $("#labelName").keyup(function(){
+        if($(this).val()=="人工"){
+            $(".promptName").show();
+            scrolls.refresh();
+        }
+        if($(this).val()==""){
+            $(".promptName").hide();
+        }
+    });
+
+    //****************************************弹框提示内容
+    var scrolls = nw.scroll(sss("cn3"), {
+        yShow: true,
+        xShow: false,
+        autoHide: false
+    });
+
+    //****************************************点击添加标签
+    $("#addlabel").click(function(){
+        $(".bounced_label_name").show();
+        $(".model").show();
+    });
+    $(".close").click(function(){
+        $(".bounced_label_name").hide();
+        $(".model").hide();
+    })
+})
+</script>

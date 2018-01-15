@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jQuery.1.8.2.min.js"></script>
+    <script src="js/nw-scroll.min.js"></script>
+</head>
+<style>
+    .index_table tr td, .index_table tr th{
+        box-sizing:border-box;
+        -moz-box-sizing:border-box; /* Firefox */
+        -webkit-box-sizing:border-box; /* Safari */
+    }
+    #header{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        left: -1px;
+    }
+
+</style>
+<body>
+    <div class="left">
+        <div class="logo"><img src="images/logo.png" alt=""/></div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a class="left_active" href="#">首页</a>
+                </li>
+                <li>
+                    <a href="management.html">标签管理</a>
+                    <ul>
+                        <li><a href="#">未审核标签</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="labelAssociated.html">标签关联查询</a>
+                </li>
+                <li>
+                    <a href="sensitiveLabel.html">敏感标签管理</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+        <div class="header">
+            <div class="header_left">贝格资讯智能标签管理系统</div>
+            <div class="header_right">
+                <div class="img"><img src="images/img.jpg" alt=""/></div>
+                <div class="name">
+                    <p>justbing@123.com</p>
+                    <p>2015-05-09　09:35</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="total_label">当前标签总量：<span>2341</span></div>
+        <div class="wrapper_right">
+            <ul class="tabs clearfix" id="tabs">
+                <li class="active">今日</li>
+                <li>本周</li>
+                <li>本月</li>
+            </ul>
+            <div class="cont">
+                <div class="hot_label clearfix">
+                    <span>今日最热标签：</span>
+                    <ul>
+                        <li>人工智能</li>
+                        <li>人工智能</li>
+                        <li>人工智能</li>
+                        <li>人工智能</li>
+                        <li>人工智能</li>
+                        <li>人工智能</li>
+                        <li>人工智能</li>
+                        <li>人工智能</li>
+                    </ul>
+                </div>
+                <div class="chart"><img src="images/index_01.jpg" alt=""/></div>
+            </div>
+
+            <div class="clearfix">
+                <div class="mosthotlabel">
+                    <h6>最热标签引用数量</h6>
+                    <div class="chart02">
+                        <img src="images/index_02.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="mosthotlabel">
+                    <h6>最热标签引用数量</h6>
+                    <div class="index_table" id="thead" style="min-width: 395px;border-left: 1px solid #dedede;position: relative;overflow-y: scroll;overflow-x: hidden;height: 281px;" onscroll="myFunction()">
+
+                        <div>
+                        <table style="margin-top: 40px">
+                            <thead id="header">
+                            <tr style="width: 100%;">
+                                <th id="one01">排名</th>
+                                <th id="two01">标签名称</th>
+                                <th id="three01">引用文章数量</th>
+                                <th id="four01">引用文章名称</th>
+                            </tr>
+                            </thead>
+                            <tbody style="margin-top: 41px;">
+                            <tr>
+                                <td id="one02" style="min-width: 40px;">1</td>
+                                <td id="two02" style="min-width: 74px;">人工智能</td>
+                                <td id="three02" class="hover number" style="min-width: 113px;"><a href="javascript:;">4</a></td>
+                                <td rowspan="6" style="min-width: 163px;" id="articleName"></td>
+                            </tr>
+                            <tr>
+                                <td style="width:  70px;">2</td>
+                                <td>人工智能</td>
+                                <td class="number"><a href="javascript:;">4</a></td>
+
+                            </tr>
+                            <tr>
+                                <td style="width:  70px;">3</td>
+                                <td>人工智能</td>
+                                <td class="number"><a href="javascript:;">4</a></td>
+
+                            </tr>
+                            <tr>
+                                <td style="width:  70px;">4</td>
+                                <td>人工智能</td>
+                                <td class="number"><a href="javascript:;">4</a></td>
+
+                            </tr>
+                            <tr>
+                                <td style="width:  70px;">5</td>
+                                <td>人工智能</td>
+                                <td class="number"><a href="javascript:;">4</a></td>
+
+                            </tr>
+                            <tr>
+                                <td style="width:  70px;">6</td>
+                                <td>人工智能</td>
+                                <td class="number"><a href="javascript:;">4</a></td>
+
+                            </tr>
+                            <tr>
+                                <td style="width:  70px;">5</td>
+                                <td>人工智能</td>
+                                <td class="number"><a href="javascript:;">4</a></td>
+
+                            </tr>
+                            <tr>
+                                <td style="width:  70px;">6</td>
+                                <td>人工智能</td>
+                                <td class="number"><a href="javascript:;">4</a></td>
+
+                            </tr>
+                            <tr>
+                                <td style="width:  70px;">5</td>
+                                <td>人工智能</td>
+                                <td class="number"><a href="javascript:;">4</a></td>
+
+                            </tr>
+                            <tr>
+                                <td style="width:  70px;">6</td>
+                                <td>人工智能</td>
+                                <td class="number"><a href="javascript:;">4</a></td>
+
+                            </tr>
+                            <tr>
+                                <td style="width:  70px;">5</td>
+                                <td>人工智能</td>
+                                <td class="number"><a href="javascript:;">4</a></td>
+
+                            </tr>
+                            <tr>
+                                <td style="width:  70px;">6</td>
+                                <td>人工智能</td>
+                                <td class="number"><a href="javascript:;">4</a></td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="articles" id="articles">
+                                <div style="height: 239px;overflow: hidden;width: 100%;">
+                                    <div id="cn1">
+                                        <p>1、《最新技能提点》</p>
+                                        <p>2、《最新技能提点》</p>
+                                        <p>3、《最新技能提点》</p>
+                                        <p>4、《最新技能提点》</p>
+                                        <p>4、《最新技能提点》</p>
+                                        <p>4、《最新技能提点》</p>
+                                        <p>4、《最新技能提点》</p>
+                                        <p>4、《最新技能提点》</p>
+                                        <p>4、《最新技能提点》</p>
+                                        <p>4、《最新技能提点》</p>
+                                        <p>11、《最新技能提点》</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer02">上海贝格计算机数据服务有限公司. Copyright © 2017  All Rights Reserved</div>
+    </div>
+</body>
+</html>
+
+
+<script>
+//    左侧菜单
+//    $(document).ready(function(){
+//
+////点击a的时候
+//        $("#menu").on("click","li a",function(e){
+//            var $this=$(this);
+//            $("#menu a").removeClass("left_active");
+//            $(this).addClass("left_active");
+//
+//            //判断点击的那个 里面的ul是否显示
+//            var subUl=$this.next();  //子菜单
+//            if(subUl.is("ul") && subUl.is(":visible")){   //有子菜单，并且是可见的
+//                subUl.slideUp(300);  //收起
+//            }else if(subUl.is("ul") && !subUl.is(":visible")){  //有子菜单，并且是 不可见的
+//                //找到可见的收起
+//                var parent=$this.parents("ul").first();
+//                parent.find("ul:visible").slideUp(300,function(){
+//                    $(this).siblings("a").removeClass("left_active");
+//                });
+//                subUl.slideDown(300);
+//            }else if(!subUl){
+//                e.preventDefault();
+//            }
+//
+//        })
+//
+//    });
+//    左侧菜单结束
+//滚动条
+function sss(id){
+    return document.getElementById(id)
+}
+//var scrolls = nw.scroll(sss("cn1"), {
+//    yShow: true,
+//    xShow: false,
+//    autoHide: false
+//});
+
+$(function(){
+    window.onload=window.onresize=function(){
+        $("#articles").width($("#articleName").width());
+        $("#one01").width($("#one02").width()+1);
+        $("#two01").width($("#two02").width()+1);
+        $("#three01").width($("#three02").width()+1);
+        $("#four01").width($("#articleName").width()+1);
+       // scrolls.refresh();
+        //********************************************************左侧高度
+        $(".left").height($(".right").height());
+
+
+        var screenW=document.documentElement.clientWidth;
+        $(".right").width(screenW-197);
+
+
+    };
+    //********************************************************鼠标经过
+    $(".number").hover(function(){
+        $(".number").removeClass("hover");
+       $(this).addClass("hover");
+    });
+    //********************************************************今日/本周/本月
+    $("#tabs li").click(function(){
+        if($(this).index()!=5){
+            $(this).addClass("active").siblings().removeClass("active");
+        }
+    });
+
+
+
+})
+
+function myFunction() {
+    $("#header").css("top",$("#thead").scrollTop())
+}
+
+</script>
